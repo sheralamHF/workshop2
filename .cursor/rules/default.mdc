@@ -1,0 +1,21 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## Typo Checking Rule
+
+This rule checks for common typos and spelling mistakes in all files of the project.
+
+### Check for typos in all files
+- Avoid common misspellings in code and documentation
+- Ensure consistent terminology throughout the codebase
+- Check for proper capitalization of technical terms
+- Run a spellcheck before committing changes
+- Pay special attention to user-facing text
+
+### Typo prevention tips
+- Use IDE spell checking extensions when available
+- Review commit messages for spelling errors
+- When unsure about spelling, verify with documentation or dictionaries
+- Maintain a glossary of project-specific terms
