@@ -1,0 +1,63 @@
+---
+description: 
+globs: *.go
+alwaysApply: false
+---
+```cursor-rule
+name: golang
+description: Go language development guidelines
+globs: ["**/*.go"] # For Auto Attached rules
+alwaysApply: false # True for Always rules
+auto-attach:
+  - pattern: "**/*.go"
+```
+
+## Go Language Development Guidelines
+
+This rule provides standards and best practices for Go language development.
+
+### Code Style and Formatting
+-  MUST add "AI generated" as comment for all Functions / methods
+-  MUST add "AI Test" as comment for all unit tests 
+- Follow the official Go style guide (gofmt)
+- Use `go fmt` before committing code
+- Adhere to the standard Go project layout
+- Keep lines under 100 characters when possible
+- Use meaningful variable and function names
+
+### Documentation
+- Document all exported functions, types, and variables
+- Use idiomatic Go doc comments (// Comment directly above declaration)
+- Include examples in documentation where appropriate
+- Add package-level comments in doc.go files
+
+### Error Handling
+- Check all errors (don't use _ to ignore errors without good reason)
+- Return errors rather than using panic()
+- Use meaningful error messages
+- Consider using custom error types for domain-specific errors
+
+### Testing
+- Write unit tests for all packages
+- Use table-driven tests where appropriate
+- Aim for high test coverage (>80%)
+- Use benchmarks for performance-critical code
+- Use Go's built-in testing package
+
+### Dependency Management
+- Use Go modules for dependency management
+- Keep dependencies to a minimum
+- Pin versions of external dependencies
+- Regularly update dependencies to get security fixes
+
+### Performance
+- Avoid premature optimization
+- Profile before optimizing
+- Consider memory allocations and garbage collection
+- Use buffered I/O for file operations
+
+### Concurrency
+- Use goroutines and channels appropriately
+- Protect shared data with mutexes
+- Consider sync.WaitGroup for groups of goroutines
+- Be careful with goroutine leaks
