@@ -19,3 +19,11 @@ This rule checks for common typos and spelling mistakes in all files of the proj
 - Review commit messages for spelling errors
 - When unsure about spelling, verify with documentation or dictionaries
 - Maintain a glossary of project-specific terms
+
+### General rules
+- AI Commits have AI_Code as prefix, followed by description
+- Commits must follow Unix commit style 
+- Don't log (backend and frontend) sensitive data to prevent leaks
+- Unit test is a must
+- Documentation must be in the docs directory in both  directories backend & frontend. 
+- Must follow Open API documentation 3.1 https://swagger.io/specification/

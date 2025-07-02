@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+For any Javascript code changes, must follow the rules in the .cursor/rules/js_rules.md file.
