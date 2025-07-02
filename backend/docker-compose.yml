@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: workshop2-api
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    networks:
+      - workshop2-network
+
+networks:
+  workshop2-network:
+    driver: bridge 
